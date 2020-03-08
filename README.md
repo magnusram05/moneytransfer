@@ -40,7 +40,12 @@ http://localhost:8080/fintech/account/v1/moneytransfer
 
 ### Payload
 ```json
-{"userID":1,"fromAccount":1, "toAccount":2, "amountToTransfer":"500"}
+{
+	"userID" : 1,
+	"fromAccount" : 1,
+	"toAccount" : 2,
+	"amountToTransfer" : 500
+}
 ```
 ### Response
 ```json
