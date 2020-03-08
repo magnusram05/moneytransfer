@@ -1,30 +1,30 @@
-#Money Transfer APIs
+# Money Transfer APIs
 
-##Balance Inquiry 
-###API 
+## Balance Inquiry 
+### API 
 http://localhost:8080/fintech/account/v1/balance
 
-###HTTP Method
-``POST``
+### HTTP Method
+```POST```
 
-###Payload
+### Payload
 ```
 {"userID":1,"accountID":1}
 ```
 
-##Money Transfer
-###API
+## Money Transfer
+### API
 http://localhost:8080/fintech/account/v1/moneytransfer
 
-###HTTP Method
-``POST``
+### HTTP Method
+```POST```
 
-###Payload
+### Payload
 ```
 {"userID":1,"fromAccount":1, "toAccount":2, "amountToTransfer":"500"}
 ```
 
-##Running and testing the App
+## Running and testing the App
 ### Prerequisites
 * JDK 8
 * Apache Maven 3.3.9 and above
@@ -49,7 +49,7 @@ Jersey app started with WADL available at http://localhost:8080/fintech/applicat
 
 Once the app is running, test the Money Transfer and Balance inquiry APIs using ``curl`` or any REST API testing tool
 
-###Testing using curl
+### Testing using curl
 
 Check account balance of ``Account-1: 1000`` and ``Account-2: 2000``
 ```
