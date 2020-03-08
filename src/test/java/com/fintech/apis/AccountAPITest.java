@@ -130,6 +130,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(3)
     public void testMoneyTransfer_happy() {
         MoneyTransferRequest moneyTransferRequest = MoneyTransferRequest.newBuilder()
                 .setUserID(1)
@@ -146,6 +147,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(4)
     public void testMoneyTransfer_invalidUser() {
         MoneyTransferRequest moneyTransferRequest = MoneyTransferRequest.newBuilder()
                 .setUserID(-1)
@@ -157,6 +159,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(5)
     public void testMoneyTranfer_invalidFromAccount() {
         MoneyTransferRequest moneyTransferRequest = MoneyTransferRequest.newBuilder()
                 .setUserID(1)
@@ -168,6 +171,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(6)
     public void testMoneyTranfer_invalidToAccount() {
         MoneyTransferRequest moneyTransferRequest = MoneyTransferRequest.newBuilder()
                 .setUserID(1)
@@ -179,6 +183,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(7)
     public void testMoneyTranfer_invalidAmount() {
         MoneyTransferRequest moneyTransferRequest = MoneyTransferRequest.newBuilder()
                 .setUserID(1)
@@ -190,6 +195,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(8)
     public void testMoneyTranfer_accountDoesntMatchUser() {
         MoneyTransferRequest moneyTransferRequest1 = MoneyTransferRequest.newBuilder()
                 .setUserID(1)
@@ -209,6 +215,7 @@ public class AccountAPITest {
     }
 
     @Test
+    @Order(9)
     public void testMoneyTranfer_insufficientAccountBalance() {
         MoneyTransferRequest moneyTransferRequest = MoneyTransferRequest.newBuilder()
                 .setUserID(1)
