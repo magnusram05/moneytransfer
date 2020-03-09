@@ -56,12 +56,12 @@ http://localhost:8080/fintech/account/v1/moneytransfer
 {
     "errorMessages": null,
     "successMsgs": [
-        "Account Balance: 1000"
+        "Successfully transferred the amount"
     ],
     "account": {
         "accountID": 1,
         "userID": 1,
-        "currentBalance": 1000
+        "currentBalance": 500.0
     },
     "errorCode": "SUCCESS"
 }
