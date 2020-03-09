@@ -1,5 +1,9 @@
 # Money Transfer APIs
 
+This is a Jersey REST application. It exposes two APIs
+* Balance Inquiry
+* Money Transfer
+
 ## Balance Inquiry 
 ### API 
 http://localhost:8080/fintech/account/v1/balance
